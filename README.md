@@ -1,4 +1,4 @@
-# skip-gram-Chinese
+# stock-price-prediction
 - **概要**<br>
 针对期货交易数据，利用tensorflow进行预测,实验数据由“中农网”提供，外链下载
 - **代码**<br>
