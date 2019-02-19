@@ -1,25 +1,14 @@
 # skip-gram-Chinese
 - **概要**<br>
-针对中文语料数据，基于tensorflow的skip-gram算法实现,实验语料使用金庸全集（可替换）
+针对期货交易数据，利用tensorflow进行预测,实验数据由“中农网”提供，外链下载
 - **代码**<br>
-skipgram_chinese.py -- 源码<br>
-usage_example.py -- 使用示例（需下载word2vec.txt）<br>
-- **语料与模型**<br>
-语料 -- 金庸全集<br>
-模型 -- word2vec.txt (10万词，100维向量表示)<br>
-文件较大，均提供外链下载<br>
-- **效果示例**<br>
-
-```
-pd.Series(word2vec_model.most_similar(u'乔峰'))
-```
-*0    (鸠摩智, 0.5863361358642578)<br>
-1     (萧峰, 0.5798118114471436)<br>
-2    (任我行, 0.5723351836204529)<br>
-3    (慕容复, 0.5638849139213562)<br>
-4     (杨康, 0.5621821880340576)<br>
-5    (裘千仞, 0.5401000380516052)<br>
-6    (岳不群, 0.5394284725189209)<br>
-7    (张翠山, 0.5377693176269531)<br>
-8    (车尔库, 0.5314956903457642)<br>
-9    (令狐冲, 0.5277308821678162)<br>*
+arima.py -- ARIMA,BaseLine<br>
+lstm_keras.py -- lstm模型KERAS版本<br>
+lstm_keras.py -- lstm模型TensorFlow版本<br>
+seq2seq_tf.py -- seq2seq模型(即以序列预测序列)<br>
+result_output.py -- 预测与输出<br>
+- **数据**<br>
+data -- 期货交易数据(文件较大，提供网盘下载)<br>
+- **结果**<br>
+The Mean Absolute Error is: 81.91800705907733 (Price is about 5000).
+![image](http://github.com/RilaShu/stock-price-prediction-deep-learning/raw/master/images/result.png)
