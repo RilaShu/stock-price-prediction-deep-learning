@@ -10,5 +10,5 @@ result_output.py -- 预测与输出<br>
 - **数据**<br>
 data -- 期货交易数据(文件较大，提供网盘下载)<br>
 - **结果**<br>
-The Mean Absolute Error is: 81.91800705907733 (Price is about 5000).
+The Mean Absolute Error is: 81.91800705907733 (Price is about 5000).<br>
 ![image](http://github.com/RilaShu/stock-price-prediction-deep-learning/raw/master/images/result.png)
